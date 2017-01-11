@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/playerLaser.cs">
+    <Files>
+      <File FileName="Assets/pc.cs" Line="80" Column="46" />
+      <File FileName="Assets/track_pc.cs" Line="21" Column="29" />
+      <File FileName="Assets/followPC.cs" Line="19" Column="36" />
+      <File FileName="Assets/playerLaser.cs" Line="11" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
