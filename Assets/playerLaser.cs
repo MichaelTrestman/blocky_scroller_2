@@ -6,10 +6,11 @@ public class playerLaser : MonoBehaviour {
 
 	public GameObject ship;
 	public float damage = 100f;
-	public string side;	
+	public string side;
+	public float shotDuration = 1f;
 
 	public void Start () {
-		Invoke("DestroySelf", .5f);
+		Invoke("DestroySelf", shotDuration);
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {	

@@ -8,9 +8,20 @@ public class SpawnMaro : MonoBehaviour {
 	GameObject newMaro;
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating( "Spawn",1f, latency);
+		SpawnRandomlyForAWhile ();
+		latency *= 0.5f + Random.value;
 	}
-	
+
+	void SpawnRandomlyForAWhile(){
+		latency *= 0.5f + Random.value;
+		InvokeRepeating( "Spawn", 0.1f, latency);
+		Invoke ("CancelInvocationsThenReInvoke", 3f*latency);
+	}
+
+	void CancelInvocationsThenReInvoke(){
+		CancelInvoke ("Spawn");
+		SpawnRandomlyForAWhile ();
+	}
 	void Spawn (){
 		newMaro = Instantiate(maro, gameObject.transform.position, Quaternion.identity);
 

@@ -38,8 +38,11 @@ public class track_pc : MonoBehaviour {
 			
 		if (Input.GetKeyUp(KeyCode.P)){
 			Time.timeScale = 0.0001f;
+			gameObject.GetComponent<Camera> ().orthographicSize *= 2;
+
 		} else if (Input.GetKeyUp(KeyCode.Y)){
 			Time.timeScale = 1f;
+			gameObject.GetComponent<Camera> ().orthographicSize = maxZoom;
 		}
 	}
 }

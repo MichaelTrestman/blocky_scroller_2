@@ -59,6 +59,7 @@
      <Compile Include="Assets\pc.cs" />
      <Compile Include="Assets\playerLaser.cs" />
      <Compile Include="Assets\script.cs" />
+     <Compile Include="Assets\sword.cs" />
      <Compile Include="Assets\track_pc.cs" />
      <Compile Include="Assets\wanderBackAndForth.cs" />
  <Reference Include="UnityEngine.Analytics">
